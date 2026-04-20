@@ -20,4 +20,8 @@ public class Aluno {
         return (NOTA1 + NOTA2 + NOTA3) / 3;
     }
 
+    @Override
+    public String toString(){
+        return getNome() + " tem a média: " + String.format("%.1f ",getNotas());
+    }
 }
